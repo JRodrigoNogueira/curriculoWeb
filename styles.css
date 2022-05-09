@@ -4,8 +4,8 @@ body{
 
 @font-face {
     font-family: 'Inter';
-    src: url("/Inter-3.19/Inter-Medium.woff2?v=3.19") format("woff2"),
-         url("/Inter-3.19/Inter-Medium.woff?v=3.19") format("woff");
+    src: url("./Inter-3.19/Inter-Medium.woff2?v=3.19") format("woff2"),
+         url("./Inter-3.19/Inter-Medium.woff?v=3.19") format("woff");
   }
 
 * {
