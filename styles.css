@@ -1,0 +1,215 @@
+body{
+    background-color: #E5E5E5;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/Inter-3.19/Inter-Medium.woff2?v=3.19") format("woff2"),
+         url("/Inter-3.19/Inter-Medium.woff?v=3.19") format("woff");
+  }
+
+* {
+    color: white;
+    font-family: 'Inter';
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+    color: #212121;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo{
+    display: grid;
+    width: 704px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:    "infoLateral_1 corpoCurriculo"
+                            "infoLateral_2 corpoCurriculo"
+                            "redesSociais redesSociais"
+}
+
+.redesSociais {
+    background-color: #102238;
+    grid-area: redesSociais;
+    border-top: 4px solid #5D8A81;
+    height: 110px;
+}
+
+.infoLateral_1 {
+    background-color: #102238;
+    grid-area: infoLateral_1;
+}
+
+.infoLateral_2 {
+    background-color: #102238;
+    grid-area: infoLateral_2;
+    border-top: 4px solid #5D8A81;
+    padding-bottom: 50px;
+}
+
+.corpoCurriculo{
+    background-color: white;
+    grid-area: corpoCurriculo;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 25px;
+    color: #13253D;
+    text-align: left;
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.formatoTexto {
+    margin: 10px;
+    padding: 5px;
+}
+
+.textoEsquerda {
+    font-size: 13px;
+    color: #E1E9EE;
+}
+
+.margemTopo {
+    margin-top: 20px;
+}
+
+.contatoInfo {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.circulo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.circuloP {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F38118
+}
+
+.divisaoLateral{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#fotoCapa {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    position: absolute;
+}
+
+#fotoPerfil {
+    position: absolute;
+    border-radius: 50%;
+    width: 50%;
+    left: calc(25% - 5px);
+    top: 30px;
+    border: 5px solid white;
+}
+
+#imagens {
+    position: relative;
+    height: 180px;
+}
+
+#textoTopo {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+@media (max-width: 720px) {
+
+    body {
+        margin: 0;
+    }
+
+    .corpoCurriculo {
+        padding-bottom: 20px;
+    }
+
+    .formatoTexto{
+        margin-bottom: 0;
+    }
+
+    #imagens {
+        height: 240px;
+    }
+
+    #fotoPerfil {
+        width: 200px;
+        left: calc( 50% - 100px);
+    }
+
+    #contato {
+        text-align: left;
+    }
+
+    #fotoCapa {
+        height: 160px;
+    }
+
+    .curriculo {
+        display: block;
+        width: 100%;
+    }
+
+    #textoTopo {
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    .contatoInfo {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 520px){
+        .links {
+            display: grid;
+        }
+
+        .redesSociais {
+            height: 260px;
+        }
+    }
+}
